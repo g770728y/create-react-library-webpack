@@ -6,7 +6,7 @@
 
 - 基于`create-react-app`, 并且没有`eject`
 - 你可以使用`scss`等 CRA 的诸多特性, 并且不需要额外配置
-- 默认配置 `storybook`, 直接在`src`目录下写`.stories.tsx`, 然后 `yarn sb`
+- 默认配置了 `storybook`(支持 css module + typescript), 直接在`src`目录下写`.stories.tsx`, 然后 `yarn sb`
 - 支持`jest`, 直接在`src`目录下`*.test.ts`, 然后 `yarn test`
 
 ---
