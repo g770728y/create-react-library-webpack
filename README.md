@@ -3,8 +3,10 @@
 git clone https://github.com/g770728y/create-react-library-webpack.git <your-project-name>
 vi ./package.json  <== 修改package.json中的project信息
 yarn
+**注意:**  `src/lib/index`是你真正要导出为library的代码, 供其它库引用
+**测试**: src/index+src/demo/index仅用于测试, 当然你也可以直接使用整合好的storybook
+**发布**: npm publish
 ```
-
 ---
 
 ## 特性
