@@ -1,7 +1,16 @@
 import * as React from 'react';
-import { storiesOf } from '@storybook/react';
 import MyComponent from '.';
+import type {Meta, StoryObj} from '@storybook/react';
 
-storiesOf('定制/组件', module).add('default', () => {
-  return <MyComponent id={3} />;
-});
+const meta: Meta<typeof MyComponent> = {
+  title: '定制组件',
+  component: MyComponent
+};
+
+export default meta;
+
+type Story = StoryObj<typeof MyComponent>;
+export const Default: Story = {
+  render: () => <MyComponent id={10000}/>
+}
+
